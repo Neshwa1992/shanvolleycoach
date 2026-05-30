@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Gallery.html" />
+    <Content Remove="wwwroot\sportscoaching.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\images\37.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\coach17.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\FootballVest.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\About.html" />
+    <None Include="wwwroot\Gallery.html" />
+    <None Include="wwwroot\sportscoaching.html" />
+    <None Include="wwwroot\events.html" />
+    <None Include="wwwroot\images\hero-sports.jpg" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\services.html" />
+    <None Include="wwwroot\Style.css" />
+  </ItemGroup>
+
+</Project>
