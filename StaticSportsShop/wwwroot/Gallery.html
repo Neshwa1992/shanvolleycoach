@@ -27,22 +27,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
     <script>
-const gallery = document.getElementById("gallery");
+        document.addEventListener("DOMContentLoaded", () => {
+            const gallery = document.getElementById("gallery");
 
-// Generate 65 images automatically
-for (let i = 1; i <= 64; i++) {
-    gallery.innerHTML += `
-        <div class="col-6 col-md-4 col-lg-3">
-            <a href="images/coach${i}.jpeg" data-fancybox="gallery">
-                <img src="images/coach${i}.jpeg" loading="lazy" class="img-fluid gallery-img">
-            </a>
-        </div>
-    `;
-}
+            let html = "";
 
-// Activate Fancybox
-Fancybox.bind("[data-fancybox='gallery']", {});
+            // Generate images
+            for (let i = 1; i <= 64; i++) {
+                html += `
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="images/coach${i}.jpeg" data-fancybox="gallery">
+                        <img
+                            src="images/coach${i}.jpeg"
+                            loading="lazy"
+                            class="img-fluid gallery-img"
+                            onerror="this.style.display='none'"
+                        >
+                    </a>
+                </div>
+            `;
+            }
+
+            gallery.innerHTML = html;
+
+            // Initialize Fancybox
+            Fancybox.bind("[data-fancybox='gallery']", {});
+        });
     </script>
-
 </body>
 </html>
