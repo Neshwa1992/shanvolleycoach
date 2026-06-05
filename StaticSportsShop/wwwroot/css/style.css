@@ -818,13 +818,13 @@ body:after {
 .home-slider .owl-item,
 .home-slider .slider-item {
     height: 350px;
-}
+}*/
 .slider-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-}*/
+}
 /**/
 .owl-style .owl-dots, .slide-one-item .owl-dots {
   text-align: center; }
