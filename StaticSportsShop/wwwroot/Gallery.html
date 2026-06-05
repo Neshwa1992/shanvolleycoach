@@ -16,7 +16,11 @@
 </head>
 
 <body>
-
+    <div class="container mt-4">
+        <a href="index.html" class="btn btn-primary">
+            ← Back to Home
+        </a>
+    </div>
     <div class="container py-4">
         <h3 class="text-center mb-4">Coach Gallery</h3>
 
@@ -33,19 +37,19 @@
             let html = "";
 
             // Generate images
-            for (let i = 1; i <= 64; i++) {
+            for (let i = 1; i <= 92; i++) {
                 html += `
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="images/coach${i}.jpeg" data-fancybox="gallery">
-                        <img
-                            src="images/coach${i}.jpeg"
-                            loading="lazy"
-                            class="img-fluid gallery-img"
-                            onerror="this.style.display='none'"
-                        >
-                    </a>
-                </div>
-            `;
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <a href="images/coach${i}.jpeg" data-fancybox="gallery">
+                            <img
+                                src="images/coach${i}.jpeg"
+                                loading="lazy"
+                                class="img-fluid gallery-img"
+                                onerror="this.style.display='none'"
+                            >
+                        </a>
+                    </div>
+                `;
             }
 
             gallery.innerHTML = html;
