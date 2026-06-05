@@ -555,9 +555,7 @@
 
     <script>
         (function () {
-            emailjs.init({
                 emailjs.init("K--dGGiWWGc6Rykkk");
-            });
         })();
         document.getElementById("contactForm").addEventListener("submit", function (e) {
             e.preventDefault();
@@ -581,6 +579,7 @@
                     alert("Failed to send message");
                     console.error("EmailJS error:", error);
                 });
+        });    
     </script>
 </body>
 </html>

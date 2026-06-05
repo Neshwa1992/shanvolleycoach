@@ -277,22 +277,39 @@ jQuery(document).ready(function($) {
 	siteSticky();
 
 	// navigation
-  var OnePageNavigation = function() {
-    var navToggler = $('.site-menu-toggle');
-   	$("body").on("click", ".main-menu li a[href^='#'], .smoothscroll[href^='#'], .site-mobile-menu .site-nav-wrap li a", function(e) {
-      e.preventDefault();
+	var OnePageNavigation = function () {
 
-      var hash = this.hash;
+		$("body").on(
+			"click",
+			".main-menu a, .site-mobile-menu a, .smoothscroll",
+			function (e) {
 
-      $('html, body').animate({
-        'scrollTop': $(hash).offset().top
-      }, 600, 'easeInOutExpo', function(){
-        window.location.hash = hash;
-      });
+				var href = $(this).attr("href");
 
-    });
-  };
-  OnePageNavigation();
+				// If it's a normal page link (like gallery.html), allow it
+				if (href && !href.startsWith("#")) {
+					return; // DO NOT prevent default
+				}
+
+				// Only handle smooth scroll for # links
+				if (href && href.startsWith("#")) {
+					e.preventDefault();
+
+					var target = $(href);
+
+					if (target.length) {
+						$("html, body").animate(
+							{ scrollTop: target.offset().top },
+							600,
+							"easeInOutExpo"
+						);
+					}
+				}
+			}
+		);
+	};
+
+	OnePageNavigation();
 
   var siteScroll = function() {
 
