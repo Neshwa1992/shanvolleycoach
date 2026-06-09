@@ -51,9 +51,9 @@
             <div class="container">
                 <div class="row align-items-center">
 
-                    <div class="col-6 col-xl-2">
+                    <!--<div class="col-6 col-xl-2">
                         <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">Coaching<span class="text-primary">.</span> </a></h1>
-                    </div>
+                    </div>-->
 
                     <div class="col-12 col-md-10 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right" role="navigation">
@@ -270,11 +270,10 @@
                                 </blockquote>
 
                                 <figure>
-                                    <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
+                                    <img src="" alt="Image" class="img-fluid rounded-circle mx-auto">
                                 </figure>
                                 <h3 class="font-size-20 text-black">
                                     Virginia Caacoy
-                                    Student : Jennylla Caacoy
                                 </h3>
                             </div>
                         </div>
@@ -285,13 +284,17 @@
 
 
                                 <blockquote class="mb-4">
-                                    <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
+                                    Coach Shan has been much more than a volleyball coach to our son, Stian. He has been a mentor, motivator, and positive role model. From day one, Shan made Stian feel valued and encouraged, regardless of his skill level. We have watched Stian grow not only as a player but also as a confident and disciplined young boy who is eager to learn and improve.
+
+                                    What stands out most is Shan's passion for coaching and the genuine care he shows for every child. Stian always returns from training with a smile, excited to share what he has learned. As parents, there is nothing more rewarding than seeing your child develop confidence, resilience, and a love for the sport. We are truly grateful to Coach Shan for being such an important part of Stian's volleyball journey.
                                 </blockquote>
 
                                 <figure>
-                                    <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
+                                    <img src="images/testimonial.jpeg" alt="Image" class="img-fluid rounded-circle mx-auto">
                                 </figure>
-                                <h3 class="font-size-20 mb-4 text-black">Ken Davis</h3>
+                                <h3 class="font-size-20 mb-4 text-black">
+                                    Alex Rajesh
+                                </h3>
 
 
                             </div>
@@ -302,13 +305,13 @@
 
 
                                 <blockquote class="mb-4">
-                                    <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
+                                    Thank you so much for having me coach! You've taught me many things. From learning how to manage many things at once. The only reason I got MVP is solely because of your dedication as a coach and the way you strive for each and every one of your trainees. Hopefully I'll get to see you and your family soon! Once again, thank you so much for everything!
                                 </blockquote>
 
                                 <figure>
-                                    <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
+                                    <img src="images/testi2.png" alt="Image" class="img-fluid rounded-circle mx-auto">
                                 </figure>
-                                <h3 class="font-size-20 text-black">Mellisa Griffin</h3>
+                                <h3 class="font-size-20 text-black">Giana Sibi</h3>
 
 
                             </div>
@@ -319,13 +322,17 @@
 
 
                                 <blockquote class="mb-4">
-                                    <p>&ldquo;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est maxime adipisci incidunt voluptatum pariatur. Officia eaque ipsum ducimus. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                                    My daughter started training with Coach Shan in July 2025 with no prior volleyball experience. Through his guidance, patience, and dedication, she has improved tremendously in a short period of time.
+
+                                    Coach Shan ensures that every trainee receives personalized guidance based on their individual abilities and skill level. He creates a positive, enjoyable learning environment that makes each training session both fun and engaging.
+
+                                    We are truly grateful for his commitment to developing young athletes and helping them build confidence in the sport. We sincerely wish Coach Shan continued success and hope that many more students will have the opportunity to learn from such an outstanding coach.
                                 </blockquote>
 
                                 <figure>
-                                    <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
+                                    <img src="images/testi1.jpeg" alt="Image" class="img-fluid rounded-circle mx-auto">
                                 </figure>
-                                <h3 class="font-size-20 mb-4 text-black">Robert Steward</h3>
+                                <h3 class="font-size-20 mb-4 text-black">Hezal</h3>
 
 
                             </div>
@@ -433,7 +440,7 @@
                         <form id="contactForm">
                             <div class="form-group row">
                                 <div class="col-md-6 mb-3 mb-md-0">
-                                    <input type="text" class="form-control" placeholder="First name">
+                                    <input type="text" id="name" name="name" class="form-control" placeholder="First name">
                                 </div>
                                 <div class="col-md-6">
                                     <input type="text" class="form-control" placeholder="Last name">
@@ -442,14 +449,12 @@
 
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <input type="email" name="email" class="form-control" placeholder="Email address">
-                                </div>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email address">                                </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col-md-12">
-                                    <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
-                                </div>
+                                    <textarea id="message" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>                                </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-6 mr-auto">
@@ -548,20 +553,19 @@
 
     <script>
         (function () {
-                emailjs.init("K--dGGiWWGc6Rykkk");
+            emailjs.init("biHQkSWsFky9A8flo");
         })();
         document.getElementById("contactForm").addEventListener("submit", function (e) {
             e.preventDefault();
 
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
+           // const phone = document.getElementById("phone").value;
             const message = document.getElementById("message").value;
 
-            emailjs.send("service_atqlcas", "template_pqtda6m", {
+            emailjs.send("service_atqlcas", "template_7whytvj", {
                 name: name,
                 email: email,
-                phone: phone,
                 message: message
             })
                 .then(() => {

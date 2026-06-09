@@ -16,6 +16,7 @@
     <_ContentIncludedByDefault Remove="wwwroot\images\coach17.jpeg" />
     <_ContentIncludedByDefault Remove="wwwroot\images\coach67.jpeg" />
     <_ContentIncludedByDefault Remove="wwwroot\images\FootballVest.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\testimonial.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
